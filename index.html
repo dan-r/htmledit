@@ -1,1 +1,28 @@
-Lel hi
+<html>
+<head>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/foundation/5.0.2/css/foundation.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./index.js"></script>
+<title>Coding</title>
+</head>
+<body onload="reload()">
+<table style="width:100%">
+<tr>
+<td><h1>Code</h1></td>
+<td><h1>Preview</h1></td>
+</tr>
+<tr>
+<td style="width:40%;"><textarea style="width:100%;height:600px;margin-top:15px;font-size:16px" oninput="preview()" id="code"></textarea></td>
+<td style="width:60%;"><iframe style="width:100%;height:600px" id="preview"></iframe></td>
+</tr>
+<tr>
+<td>
+<a id="download" download="code.html" class="button [tiny small large]">Download</a>
+<a onclick="basic();" class="button [tiny small large]">Insert Basic Layout</a>
+<a onclick="clearbox();" class="button [tiny small large]">Clear</a>
+<a onclick="fullscreen();" class="button [tiny small large]">Full Screen</a>
+</td>
+</tr>
+</table>
+</body>
+</html>
