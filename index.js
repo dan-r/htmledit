@@ -18,7 +18,7 @@ localStorage.code=document.getElementById('code').value;
 function reload() {
 if(typeof(Storage)!=="undefined") {
 if (localStorage.code != "") {
-if (localStorage.code != "undefined") {
+if (typeof localStorage.code !=== "undefined") {
 document.getElementById('code').value=localStorage.code;
 preview();
 }
